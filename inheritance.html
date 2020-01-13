@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+    <div class="output">
+        <!--<ul></ul>
+        <p></p>
+        <input type="text"/>
+        <button>Click Here</button>-->
+        
+        <!--ternary operator example-->
+       <!-- <label for="theme">Select theme: </label>
+<select id="theme">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+</select>
+
+<h1>This is my website</h1>
+    </div> -->
+       
+        <!--Exiting loops with break-->
+      <!--  <label for="search">Search by contact name: </label>
+<input id="search" type="text">
+<button>Search</button>
+
+<p></p>-->
+        <input id="search" type="number">
+<button>Search</button>
+    <script>
+/*        let myArr = ['Chris', 'Bob', 'Jim'];
+        myArr[0]; // should return 'Chris'
+myArr[2]; // should return 40
+        console.log("Second person is " + myArr[1] + ".");*/
+        
+      /*  var dog = { name : 'Spot', breed : 'Dalmatian' };
+        console.log("The dog's name is " + dog.name);*/
+        
+       /* let browserType = 'mozilla';
+console.log("The length of the word is " + browserType.length);*/
+        /*
+        const list = document.querySelector('.output ul');
+list.innerHTML = 'o';
+var greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+
+for (var i = 0; i < greetings.length; i++) {
+  var input = greetings[i];
+  // Your conditional test needs to go inside the parentheses
+  // in the line below, replacing what's currently there
+  if (greetings[i].includes("Christmas")) {
+    var listItem = document.createElement('li');
+    listItem.textContent = input;
+    list.appendChild(listItem);
+  }
+}*/
+      /*firefox solution  
+        const list = document.querySelector('.output ul');
+list.innerHTML = '';
+let greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+ 
+for (let i = 0; i < greetings.length; i++) {
+  let input = greetings[i];
+  if (greetings[i].indexOf('Christmas') !== -1) {
+    let result = input;
+    let listItem = document.createElement('li');
+    listItem.textContent = result;
+    list.appendChild(listItem);
+  }
+}*/
+        
+        //fixing capitalisation
+        /*const list = document.querySelector('.output ul');
+list.innerHTML = '';
+let cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (let i = 0; i < cities.length; i++) {
+  let input = cities[i];
+  let lower = input.toLowerCase();
+  let firstLetter = lower.slice(0,1);
+  let capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+  let result = capitalized;
+  let listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+
+}*/
+        
+        //making new strings from old ones
+         /*   const list = document.querySelector('.output ul');
+        console.log(list);
+list.innerHTML = '';
+let stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                'GNF576746573fhdg4737dh4;Greenfield',
+                'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                'SYB4f65hf75f736463;Stalybridge',
+                'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+for (let i = 0; i < stations.length; i++) {
+  let input = stations[i];
+  let code = input.slice(0,3);
+  let semiC = input.indexOf(';');
+  let name = input.slice(semiC + 1);
+  let result = code + ': ' + name;
+  let listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}*/
+        
+/*        var longArr = [];
+        longArr[1000] = "test";
+        longArr.push(13);
+        console.log(longArr);
+        console.log("Size of the arr is " + longArr.length);*/
+  /*function first(){
+  // Simulate a code delay
+  setTimeout( function(){
+    console.log(1);
+  }, 5000 );
+}
+function second(){
+  console.log(2);
+}
+first();
+second();*/
+
+        //ec6 way
+  /*      function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.This is a new line.`);
+  callback();
+}*/
+        
+     /*   function doHomework(subject, callback) {
+  alert("Starting my " + subject + " homework.");
+  callback();
+}
+
+doHomework('math', function() {
+  alert('Finished my homework');
+});*/
+        
+        //alternatively, following ec6
+        /*function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+function alertFinished(){
+  alert('Finished my homework');
+}
+doHomework('math', alertFinished);*/
+        
+        /*function doHomework(subject, callback) {
+  alert("Starting my " + subject + " homework.");
+  callback();
+}
+function alertFinished(){
+  alert("Finished my homework.");
+}
+doHomework("English", alertFinished);*/
+        
+        /*var catNames = ["Rocket" , "Rocko", "Rolo", "Micro"];
+        console.log(catNames);
+        catNames.unshift("Shadow");
+        console.log(catNames);
+        catNames.shift("Shadow");
+        console.log(catNames);
+        catNames.push("Sonic");
+        console.log(catNames);
+        catNames.pop("Sonic");
+        console.log(catNames);*/
+        
+        /*
+        var list = document.querySelector('.output ul');
+var totalBox = document.querySelector('.output p');
+var total = 0;
+list.innerHTML = '';
+totalBox.textContent = '';
+
+var products = ['Underpants:6.99',
+ 'Socks:5.99',
+ 'T-shirt:14.99',
+ 'Trousers:31.99',
+ 'Shoes:23.99'];
+
+for(var i = 0; i < products.length; i++) {
+ var subArray = products[i].split(':');
+ var name = subArray[0];
+ var price = Number(subArray[1]);
+ total += price;
+ itemText = name + ' — $' + price;
+
+ var listItem = document.createElement('li');
+ listItem.textContent = itemText;
+ list.appendChild(listItem);
+}
+
+totalBox.textContent = 'Total: $' + total.toFixed(2);*/
+        /*
+        var list = document.querySelector('.output ul');
+var searchInput = document.querySelector('.output input');
+var searchBtn = document.querySelector('.output button');
+
+list.innerHTML = '';
+
+var myHistory= [];
+
+searchBtn.onclick = function() {
+ if(searchInput.value !== '') {
+ myHistory.unshift(searchInput.value);
+
+ list.innerHTML = '';
+
+ for(var i = 0; i < myHistory.length; i++) {
+ itemText = myHistory[i];
+ var listItem = document.createElement('li');
+ listItem.textContent = itemText;
+ list.appendChild(listItem);
+ }
+
+ if(myHistory.length >= 5) {
+ myHistory.pop();
+ }
+
+ searchInput.value = '';
+ searchInput.focus();
+ }
+}*/
+        //ternary operator example
+      /*  var select = document.querySelector('select');
+var html = document.querySelector('html');
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+select.onchange = function() {
+  ( select.value === 'black' ) ? update('black','white') : update('white','black');
+}*/
+        //exiting loops with break
+      /*  const contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
+const para = document.querySelector('p');
+const input = document.querySelector('input');
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', function() {
+  let searchName = input.value.toLowerCase();
+  input.value = '';
+  input.focus();
+  for (let i = 0; i < contacts.length; i++) {
+    let splitContact = contacts[i].split(':');
+    if (splitContact[0].toLowerCase() === searchName) {
+      para.textContent = splitContact[0] + '\'s number is ' + splitContact[1] + '.';
+      break;
+    } else {
+      para.textContent = 'Contact not found.';
+    }
+  }
+});*/
+        
+        let num = input.value;
+
+for (let i = 1; i <= num; i++) {
+  let sqRoot = Math.sqrt(i);
+  if (Math.floor(sqRoot) !== sqRoot) {
+    continue;
+  }
+
+  para.textContent += i + ' ');
+}
+    </script>
+</body>
+</html>
